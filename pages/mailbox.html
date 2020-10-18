@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+    <meta name="author" content="Creative Tim">
+    <title>Bonikk Dashboard</title>
+    <!-- Favicon -->
+    <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+    <link href="../assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <!-- SweetModel CSS  -->
+    <link rel="stylesheet" href="../assets/vendor/sweetalert2/dist/sweetalert2.min.css">
+    <!-- bonikk CSS -->
+    <link type="text/css" href="../assets/css/bonikk.css?v=1.0.0" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sidenav -->
+    <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+        <div class="container-fluid">
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main"
+                aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Brand -->
+            <a class="navbar-brand pt-0" href="../index.html">
+                <img src="../assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+            </a>
+            <!-- User -->
+            <ul class="nav align-items-center d-md-none">
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-link-icon" href="./notification.html">
+                        <i class="ni ni-bell-55"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div class="media align-items-center">
+                            <span class="avatar avatar-sm rounded-circle">
+                                <img alt="Image placeholder" src="../assets/img/theme/team-1-800x800.jpg">
+                            </span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+                        <div class=" dropdown-header noti-title">
+                            <h6 class="text-overflow m-0">Welcome!</h6>
+                        </div>
+                        <a href="../pages/profile.html" class="dropdown-item">
+                            <i class="ni ni-single-02"></i>
+                            <span>My profile</span>
+                        </a>
+                        <a href="../pages/profile.html" class="dropdown-item">
+                            <i class="ni ni-settings-gear-65"></i>
+                            <span>Settings</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#!" class="dropdown-item">
+                            <i class="ni ni-user-run"></i>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+                <!-- Collapse header -->
+                <div class="navbar-collapse-header d-md-none">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a href="../index.html">
+                                <img src="../assets/img/brand/blue.png">
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false"
+                                aria-label="Toggle sidenav">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form -->
+                <form class="mt-4 mb-3 d-md-none">
+                    <div class="input-group input-group-rounded input-group-merge">
+                        <input type="search" class="form-control form-control-rounded form-control-prepended"
+                            placeholder="Search" aria-label="Search">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <span class="fa fa-search"></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- Navigation -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="ni ni-tv-2 text-primary"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/products.html">
+                            <i class="fa fa-archive text-pink"></i> Products
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/orders.html">
+                            <i class="fa fa-shopping-cart text-info"></i> Orders
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/catagories.html">
+                            <i class="fa fa-list-alt text-danger"></i> Catagories
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/users.html">
+                            <i class="fa fa-users text-cyan"></i> Users
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/shops.html">
+                            <i class="fa fa-shopping-basket text-primary"></i> Shops
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/profile.html">
+                            <i class="ni ni-single-02 text-yellow"></i> Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/notification.html">
+                            <i class="fa fa-bell text-danger"></i> Notifications
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/mailbox.html">
+                            <i class="fa fa-envelope-open text-purple"></i> Mailbox
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/settings.html">
+                            <i class="fa fa-cogs text-dark"></i> Settings
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/login.html">
+                            <i class="ni ni-key-25 text-info"></i> Login
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/register.html">
+                            <i class="ni ni-circle-08 text-pink"></i> Register
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+            <div class="container-fluid">
+                <!-- Brand -->
+                <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Mailbox</a>
+                <!-- Form -->
+                <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+                    <div class="form-group mb-0">
+                        <div class="input-group input-group-alternative">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                            </div>
+                            <input class="form-control" placeholder="Search" type="text">
+                        </div>
+                    </div>
+                </form>
+                <!-- User -->
+                <ul class="navbar-nav align-items-center d-none d-md-flex">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div class="media align-items-center">
+                                <span class="avatar avatar-sm rounded-circle">
+                                    <img alt="Image placeholder" src="../assets/img/theme/team-4-800x800.jpg">
+                                </span>
+                                <div class="media-body ml-2 d-none d-lg-block">
+                                    <span class="mb-0 text-sm  font-weight-bold">Jessica Jones</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+                            <div class=" dropdown-header noti-title">
+                                <h6 class="text-overflow m-0">Welcome!</h6>
+                            </div>
+                            <a href="../pages/profile.html" class="dropdown-item">
+                                <i class="ni ni-single-02"></i>
+                                <span>My profile</span>
+                            </a>
+                            <a href="../pages/settings.html" class="dropdown-item">
+                                <i class="ni ni-settings-gear-65"></i>
+                                <span>Settings</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="./login.html" class="dropdown-item">
+                                <i class="ni ni-user-run"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Header -->
+        <div class="header bg-gradient-primary pb-1 pt-5 pt-md-6">
+
+        </div>
+        <!-- Page content -->
+        <div class="container-fluid" style="overflow-x: hidden;">
+
+            <!-- Mailbox  -->
+            <div class="mail-box mt-2">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 ml-lg--4">
+                        <aside class="sm-side">
+                            <div class="user-head">
+                                <div class="user-name">
+                                    <h5><a href="#">Bonikk</a></h5>
+                                    <span><a href="#">bonikk.shop@Gmail.com</a></span>
+                                </div>
+                            </div>
+                            <div class="inbox-body">
+                                <a href="#myModal" data-toggle="modal" title="Compose" class="btn btn-compose">
+                                    Compose
+                                </a>
+                                <!-- Modal -->
+                                <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+                                    id="myModal" class="modal fade" style="display: none;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" aria-hidden="true" data-dismiss="modal"
+                                                    class="close btn btn-danger">X</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h2 class="modal-title" style="text-align: center;">Compose</h2>
+                                                <br>
+                                                <form role="form" class="form-horizontal ml-md-5">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-2 control-label">To</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" placeholder="" id="inputEmail1"
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-2 control-label">Cc/Bcc</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" placeholder="" id="cc"
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-2 control-label">Subject</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" placeholder="" id="inputPassword1"
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-2 control-label">Message</label>
+                                                        <div class="col-lg-10">
+                                                            <textarea rows="10" cols="30" class="form-control" id=""
+                                                                name=""></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="col-lg-offset-2 col-lg-10">
+                                                            <span class="btn green fileinput-button">
+                                                                <i class="fa fa-plus fa fa-white"></i>
+                                                                <span>Attachment</span>
+                                                                <input type="file" name="files[]" multiple="">
+                                                            </span>
+                                                            <button class="btn btn-send" type="submit">Send</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div><!-- /.modal-content -->
+                                    </div><!-- /.modal-dialog -->
+                                </div><!-- /.modal -->
+                            </div>
+                            <ul class="inbox-nav inbox-divider">
+
+                                <li class="list-group-item active">
+                                    <a href="../pages/mailbox.html" class="active">
+                                        <div class="row">
+                                            <div class="col ml-2">
+                                                <i class="fa fa-inbox"></i>Inbox
+                                            </div>
+                                            <div class="col-auto">
+                                                <span
+                                                    class="badge badge-md badge-circle badge-floating badge-success border-white">4</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="../pages/mailbox-sent.html">
+                                        <div class="row">
+                                            <div class="col ml-2">
+                                                <i class="fa fa-paper-plane"></i> sent
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#!">
+                                        <div class="row">
+                                            <div class="col ml-2">
+                                                <i class="fa fa-bookmark"></i> Important
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#!">
+                                        <div class="row">
+                                            <div class="col ml-2">
+                                                <i class="fa fa-file"></i>
+                                                Draft
+                                            </div>
+                                            <div class="col-auto">
+                                                <span
+                                                    class="badge badge-md badge-circle badge-floating badge-danger border-white">2</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#!">
+                                        <div class="row">
+                                            <div class="col ml-2">
+                                                <i class=" fa fa-trash"></i> Trash
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="inbox-body text-center">
+                                <div class="btn-group">
+                                    <a class="btn mini btn-primary" href="#!">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-group">
+                                    <a class="btn mini btn-success" href="#!">
+                                        <i class="fa fa-phone"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-group">
+                                    <a class="btn mini btn-info" href="./settings.html">
+                                        <i class="fa fa-cog"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </aside>
+                    </div>
+                    <div class="col-lg-9 col-md-12 ml-lg--4">
+                        <aside class="lg-side">
+                            <div class="inbox-head">
+                                <h3>Inbox</h3>
+                            </div>
+                            <div class="inbox-body">
+                                <div class="mail-option">
+                                    <div class="chk-all">
+                                        <input type="checkbox" class="mail-checkbox mail-group-checkbox">
+                                        <div class="btn-group">
+                                            <a data-toggle="dropdown" href="#" class="btn mini all"
+                                                aria-expanded="false">
+                                                All
+                                                <i class="fa fa-angle-down "></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#"> None</a></li>
+                                                <li><a href="#"> Read</a></li>
+                                                <li><a href="#"> Unread</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn-group">
+                                        <a data-original-title="Refresh" data-placement="top" data-toggle="dropdown"
+                                            href="#" class="btn mini tooltips">
+                                            <i class="fa fa-retweet" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="btn-group hidden-phone">
+                                        <a data-toggle="dropdown" href="#" class="btn mini blue" aria-expanded="false">
+                                            More
+                                            <i class="fa fa-angle-down "></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-check"></i></i> Mark as Read</a></li>
+                                            <li><a href="#"><i class="fa fa-ban"></i> Spam</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#"><i class="fa fa-trash"></i> Delete</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" href="#" class="btn mini blue">
+                                            Move to
+                                            <i class="fa fa-angle-down "></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-check"></i> Mark as Read</a></li>
+                                            <li><a href="#"><i class="fa fa-ban"></i> Spam</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#"><i class="fa fa-trash"></i> Delete</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <a href="#" class="btn mini blue" onclick="onDelete()">
+                                            <i class=" fa fa-trash"></i>
+                                            Delete
+                                        </a>
+                                    </div>
+
+                                    <ul class="unstyled inbox-pagination">
+                                        <li><span>1-50 of 234</span></li>
+                                        <li>
+                                            <a class="np-btn" href="#"><i
+                                                    class="fa fa-angle-left  pagination-left"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="np-btn" href="#"><i
+                                                    class="fa fa-angle-right pagination-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="table-responsive" style="width: 58vw;">
+                                    <table class="table table-inbox table-hover">
+                                        <tbody>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                                <td class="view-message  dont-show" data-href="mailbox_details.html">
+                                                    PHPClasses</td>
+                                                <td class="view-message" data-href="mailbox_details.html">Added a new class:
+                                                    Login Class Fast Site</td>
+                                                <td class="view-message  inbox-small-cells"><i class="fa fa-paperclip"></i>
+                                                </td>
+                                                <td class="view-message  text-right">9:27 AM</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+                                                <td class="view-message dont-show" data-href="mailbox_details.html">Google
+                                                    Webmaster </td>
+                                                <td class="view-message" data-href="mailbox_details.html">Improve the search
+                                                    presence of WebSite</td>
+                                                <td class="view-message inbox-small-cells"></td>
+                                                <td class="view-message text-right">March 15</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                                <td class="view-message dont-show" data-href="mailbox_details.html">JW
+                                                    Player</td>
+                                                <td class="view-message" data-href="mailbox_details.html">Last Chance:
+                                                    Upgrade to Pro for </td>
+                                                <td class="view-message inbox-small-cells"></td>
+                                                <td class="view-message text-right">March 15</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                                <td class="view-message dont-show" data-href="mailbox_details.html">Tim
+                                                    Reid, S P N</td>
+                                                <td class="view-message" data-href="mailbox_details.html">Boost Your Website
+                                                    Traffic</td>
+                                                <td class="view-message inbox-small-cells"></td>
+                                                <td class="view-message text-right">April 01</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                                <td class="view-message dont-show" data-href="mailbox_details.html">
+                                                    Freelancer.com <span class="label label-danger pull-right">urgent</span>
+                                                </td>
+                                                <td class="view-message" data-href="mailbox_details.html">Stop wasting your
+                                                    visitors </td>
+                                                <td class="view-message inbox-small-cells"></td>
+                                                <td class="view-message text-right">May 23</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+                                                <td class="view-message dont-show">WOW Slider </td>
+                                                <td class="view-message">New WOW Slider v7.8 - 67% off</td>
+                                                <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i>
+                                                </td>
+                                                <td class="view-message text-right">March 14</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+                                                <td class="view-message dont-show">LinkedIn Pulse</td>
+                                                <td class="view-message">The One Sign Your Co-Worker Will Stab</td>
+                                                <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i>
+                                                </td>
+                                                <td class="view-message text-right">Feb 19</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                                <td class="view-message dont-show">Drupal Community<span
+                                                        class="label label-success pull-right">megazine</span></td>
+                                                <td class="view-message view-message">Welcome to the Drupal Community</td>
+                                                <td class="view-message inbox-small-cells"></td>
+                                                <td class="view-message text-right">March 04</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                                <td class="view-message dont-show">Facebook</td>
+                                                <td class="view-message view-message">Somebody requested a new password
+                                                </td>
+                                                <td class="view-message inbox-small-cells"></td>
+                                                <td class="view-message text-right">June 13</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                                <td class="view-message dont-show">Skype <span
+                                                        class="label label-info pull-right">family</span></td>
+                                                <td class="view-message view-message">Password successfully changed</td>
+                                                <td class="view-message inbox-small-cells"></td>
+                                                <td class="view-message text-right">March 24</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+                                                <td class="view-message dont-show">Google+</td>
+                                                <td class="view-message">alireza, do you know</td>
+                                                <td class="view-message inbox-small-cells"></td>
+                                                <td class="view-message text-right">March 09</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+                                                <td class="dont-show">Zoosk </td>
+                                                <td class="view-message">7 new singles we think you'll like</td>
+                                                <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i>
+                                                </td>
+                                                <td class="view-message text-right">May 14</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                                <td class="view-message dont-show">LinkedIn </td>
+                                                <td class="view-message">Alireza: Nokia Networks, System Group and </td>
+                                                <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i>
+                                                </td>
+                                                <td class="view-message text-right">February 25</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                                <td class="dont-show">Facebook</td>
+                                                <td class="view-message view-message">Your account was recently logged into
+                                                </td>
+                                                <td class="view-message inbox-small-cells"></td>
+                                                <td class="view-message text-right">March 14</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                                <td class="view-message dont-show">Twitter</td>
+                                                <td class="view-message">Your Twitter password has been changed</td>
+                                                <td class="view-message inbox-small-cells"></td>
+                                                <td class="view-message text-right">April 07</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                                <td class="view-message dont-show">InternetSeer Website Monitoring</td>
+                                                <td class="view-message">http://golddesigner.org/ Performance Report</td>
+                                                <td class="view-message inbox-small-cells"></td>
+                                                <td class="view-message text-right">July 14</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+                                                <td class="view-message dont-show">AddMe.com</td>
+                                                <td class="view-message">Submit Your Website to the AddMe Business Directory
+                                                </td>
+                                                <td class="view-message inbox-small-cells"></td>
+                                                <td class="view-message text-right">August 10</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                                <td class="view-message dont-show">Terri Rexer, S P N</td>
+                                                <td class="view-message view-message">Forget Google AdWords: Un-Limited
+                                                    Clicks fo</td>
+                                                <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i>
+                                                </td>
+                                                <td class="view-message text-right">April 14</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                                <td class="view-message dont-show">Bertina </td>
+                                                <td class="view-message">IMPORTANT: Don't lose your domains!</td>
+                                                <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i>
+                                                </td>
+                                                <td class="view-message text-right">June 16</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+                                                <td class="view-message dont-show">Laura Gaffin, S P N </td>
+                                                <td class="view-message">Your Website On Google (Higher Rankings Are Better)
+                                                </td>
+                                                <td class="view-message inbox-small-cells"></td>
+                                                <td class="view-message text-right">August 10</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td class="inbox-small-cells">
+                                                    <input type="checkbox" class="mail-checkbox">
+                                                </td>
+                                                <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                                <td class="view-message dont-show">Facebook</td>
+                                                <td class="view-message view-message">Alireza Zare Login faild</td>
+                                                <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i>
+                                                </td>
+                                                <td class="view-message text-right">feb 14</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="row align-items-center justify-content-xl-between">
+                    <div class="col-xl-6">
+                        <div class="copyright text-center text-xl-left text-muted">
+                            &copy; 2020 <a href="#" class="font-weight-bold ml-1">Team-Bonikk</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- bonikk Scripts -->
+    <!-- Core -->
+    <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetModel JS  -->
+    <script src="../assets/vendor/sweetalert2/dist/sweetalert2.min.js"></script>
+    <!-- bonikk JS -->
+    <script src="../assets/js/bonikk.js?v=1.0.0"></script>
+    <!-- mail table as a link js -->
+    <script>
+        $('*[data-href]').on("click", function () {
+            window.location = $(this).data('href');
+            return false;
+        });
+        $("td > a").on("click", function (e) {
+            e.stopPropagation();
+        });
+    </script>
+
+</body>
+
+</html>
