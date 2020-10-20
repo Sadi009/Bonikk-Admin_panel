@@ -1148,7 +1148,7 @@ document.addEventListener('DOMContentLoaded', function() {
     calendar.render();
   });
 
-  // Secect Search Js 
+// Secect Search Js 
 //Initialize with the list of symbols
 let names = ["First","Second","Third","Forth"]
 
@@ -1206,7 +1206,9 @@ $('#menuItems').on('click', '.dropdown-item', function(){
 
 buildDropDown(names)
 
-// Multiple select 
+// Multiple select in order page
+// Add porduct 
+
 var autocomplete = new SelectPure(".autocomplete-select", {
 	options: [
 	  {
@@ -1242,10 +1244,47 @@ var autocomplete = new SelectPure(".autocomplete-select", {
 		value: "gd",
 	  },{
 		label: "",
-		value: "",
+		value: "nill",
 	  },
 	],
 	autocomplete: true,
+	// multiple: true,
+	icon: "fa fa-times",
+	onChange: value => { console.log(value); },
+	classNames: {
+	  selectedLabel: "select-pure__selected-label",
+	  selectedOption: "select-pure__option--selected",
+	  placeholderHidden: "select-pure__placeholder--hidden",
+	  optionHidden: "select-pure__option--hidden",
+	}
+  });
+
+//   add Existing user 
+var autocomplete = new SelectPure(".autocomplete-select-user", {
+	options: [
+	  {
+		label: "01754******",
+		value: "01",
+	  },
+	  {
+		label: "01684******",
+		value: "02",
+	  },
+	  {
+		label: "019********",
+		value: "03",
+	  },
+	  {
+		label: "018********",
+		value: "04",
+	  },
+	  {
+		label: "",
+		value: "05",
+	  },
+	],
+	autocomplete: true,
+	// multiple: true,
 	icon: "fa fa-times",
 	onChange: value => { console.log(value); },
 	classNames: {
