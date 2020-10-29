@@ -2,40 +2,40 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
-    <meta name="author" content="Creative Tim">
-    <title>Bonikk Dashboard</title>
-    <!-- Favicon -->
-    <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <!-- Icons -->
-    <link href="../assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
-    <link href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <!-- SweetModel CSS  -->
-    <link rel="stylesheet" href="../assets/vendor/sweetalert2/dist/sweetalert2.min.css">
-    <!-- bonikk CSS -->
-    <link type="text/css" href="../assets/css/bonikk.css?v=1.0.0" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title>Bonikk Dashboard</title>
+  <!-- Favicon -->
+  <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Icons -->
+  <link href="../assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <!-- SweetModel CSS  -->
+  <link rel="stylesheet" href="../assets/vendor/sweetalert2/dist/sweetalert2.min.css">
+  <!-- bonikk CSS -->
+  <link type="text/css" href="../assets/css/bonikk.css?v=1.0.0" rel="stylesheet">
 
 </head>
 
 <body>
-    <!-- Sidenav -->
-    <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
-        <div class="container-fluid">
-            <!-- Toggler -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main"
-                aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Brand -->
-            <a class="navbar-brand pt-0" href="../index.html">
-                <img src="../assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
-            </a>
-            <!-- User -->
-       <ul class="nav align-items-center d-md-none">
+  <!-- Sidenav -->
+  <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+    <div class="container-fluid">
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main"
+        aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Brand -->
+      <a class="navbar-brand pt-0" href="../index.html">
+        <img src="../assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+      </a>
+      <!-- User -->
+      <ul class="nav align-items-center d-md-none">
         <li class="nav-item dropdown">
           <a class="nav-link nav-link-icon" href="./notification.html">
             <i class="ni ni-bell-55"></i>
@@ -210,118 +210,370 @@
         </ul>
       </div>
     </nav>
-        <!-- Header -->
-        <div class="header bg-gradient-primary pb-6 pt-5 pt-md-8">
+    <!-- Header -->
+    <div class="header bg-gradient-primary pb-6 pt-5 pt-md-8">
 
-        </div>
-        <!-- Page content -->
-        <div class="container-fluid mt--9">
-            <div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade show active" id="sub-catagory-list">
-                    <div class="row mt-5">
-                        <div class="col">
-                            <div class="card shadow">
-                                <div class="card-header border-0">
-                                    <h3 class="mb--5">Sub-catagories</h3>
-                                </div>
-                                <hr>
-                                <!-- Main content  -->
-                                <div class="container p-5 mt--5">
-                                    <div class="card-header">
-                                        <h3>Sub-catagories of computer</h3>
-                                        <a href="#!" class="btn btn-success mt-2" onclick="onAddSubCatagory()">Add Sub-Catagory</a>
-                                    </div>
-                                    <ul class="list-group list shadow mt-3">
-                                        <li class="list-group-item">
-                                            <div class="row align-items-center">
-                                                <div class="col ml-2">
-                                                    <h4 class="mb-0">
-                                                        Laptop & Notebook
-                                                    </h4>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <button type="button" class="btn btn-sm btn-danger m-2" onclick="onDelete()">Delete Sub-Catagory</button>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row align-items-center">
-                                                <div class="col ml-2">
-                                                    <h4 class="mb-0">
-                                                        Desktop PC
-                                                    </h4>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <button type="button" class="btn btn-sm btn-danger m-2" onclick="onDelete()">Delete Sub-Catagory</button>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row align-items-center">
-                                                <div class="col ml-2">
-                                                    <h4 class="mb-0">
-                                                        Components
-                                                    </h4>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <button type="button" class="btn btn-sm btn-danger m-2" onclick="onDelete()">Delete Sub-Catagory</button>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row align-items-center">
-                                                <div class="col ml-2">
-                                                    <h4 class="mb-0">
-                                                        Computer Accessories
-                                                    </h4>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <button type="button" class="btn btn-sm btn-danger m-2" onclick="onDelete()">Delete Sub-Catagory</button>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row align-items-center">
-                                                <div class="col ml-2">
-                                                    <h4 class="mb-0">
-                                                        Monitor
-                                                    </h4>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <button type="button" class="btn btn-sm btn-danger m-2" onclick="onDelete()">Delete Sub-Catagory</button>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--9">
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade show active" id="sub-catagory-list">
+          <div class="row mt-5">
+            <div class="col">
+              <div class="card shadow">
+                <div class="card-header border-0">
+                  <h3 class="mb--5">Sub-catagories</h3>
+                </div>
+                <hr>
+                <!-- Main content  -->
+                <div class="container p-5 mt--5">
+                  <div class="card-header">
+                    <h3>Sub-catagories of computer</h3>
+                    <a href="#!" class="btn btn-success mt-2" onclick="onAddSubCatagory()">Add Sub-Catagory</a>
+                  </div>
+                  <ul class="list-group list shadow mt-3">
+                    <li class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col ml-2 pt-2 pb-2" style="cursor: pointer;" data-toggle="collapse"
+                          data-target="#sub-sub-catagory-1">
+                          <h4 class="mb-0">
+                            Laptop & Notebook
+                          </h4>
                         </div>
-                    </div>
+
+                        <div class="col-auto">
+                          <button type="button" class="btn btn-sm btn-danger m-2" onclick="onDelete()">Delete
+                            Sub-Catagory</button>
+                        </div>
+                      </div>
+                      <div id="sub-sub-catagory-1" class="collapse">
+                        <ul class="list-group list shadow mt-3">
+                          <li class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col ml-2 pt-2 pb-2">
+                                <h4 class="mb-0">
+                                  Laptop
+                                </h4>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-info m-2"
+                                  onclick="onSubEditCatagory()">Edit</button>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-danger m-2"
+                                  onclick="onDelete()">Delete</button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col ml-2">
+                                <h4 class="mb-0">
+                                  Desktop PC
+                                </h4>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-info m-2"
+                                  onclick="onSubEditCatagory()">Edit</button>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-danger m-2"
+                                  onclick="onDelete()">Delete</button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col ml-2">
+                                <h4 class="mb-0">
+                                  Components
+                                </h4>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-info m-2"
+                                  onclick="onSubEditCatagory()">Edit</button>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-danger m-2"
+                                  onclick="onDelete()">Delete</button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col ml-2">
+                                <h4 class="mb-0">
+                                  Computer Accessories
+                                </h4>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-info m-2"
+                                  onclick="onSubEditCatagory()">Edit</button>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-danger m-2"
+                                  onclick="onDelete()">Delete</button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col ml-2">
+                                <h4 class="mb-0">
+                                  Monitor
+                                </h4>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-info m-2"
+                                  onclick="onSubEditCatagory()">Edit</button>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-danger m-2"
+                                  onclick="onDelete()">Delete</button>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col ml-2 pt-2 pb-2" style="cursor: pointer;" data-toggle="collapse"
+                          data-target="#sub-sub-catagory-2">
+                          <h4 class="mb-0">
+                            Desktop PC
+                          </h4>
+                        </div>
+
+                        <div class="col-auto">
+                          <button type="button" class="btn btn-sm btn-danger m-2" onclick="onDelete()">Delete
+                            Sub-Catagory</button>
+                        </div>
+                      </div>
+                      <div id="sub-sub-catagory-2" class="collapse">
+                        <ul class="list-group list shadow mt-3">
+                          <li class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col ml-2 pt-2 pb-2">
+                                <h4 class="mb-0">
+                                  Laptop & Notebook
+                                </h4>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-info m-2"
+                                  onclick="onSubEditCatagory()">Edit</button>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-danger m-2"
+                                  onclick="onDelete()">Delete</button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col ml-2">
+                                <h4 class="mb-0">
+                                  Desktop PC
+                                </h4>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-info m-2"
+                                  onclick="onSubEditCatagory()">Edit</button>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-danger m-2"
+                                  onclick="onDelete()">Delete</button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col ml-2">
+                                <h4 class="mb-0">
+                                  Components
+                                </h4>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-info m-2"
+                                  onclick="onSubEditCatagory()">Edit</button>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-danger m-2"
+                                  onclick="onDelete()">Delete</button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col ml-2">
+                                <h4 class="mb-0">
+                                  Computer Accessories
+                                </h4>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-info m-2"
+                                  onclick="onSubEditCatagory()">Edit</button>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-danger m-2"
+                                  onclick="onDelete()">Delete</button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col ml-2">
+                                <h4 class="mb-0">
+                                  Monitor
+                                </h4>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-info m-2"
+                                  onclick="onSubEditCatagory()">Edit</button>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-danger m-2"
+                                  onclick="onDelete()">Delete</button>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="list-group-item" s>
+                      <div class="row align-items-center">
+                        <div class="col ml-2 pt-2 pb-2" style="cursor: pointer;" data-toggle="collapse"
+                          data-target="#sub-sub-catagory-3">
+                          <h4 class="mb-0">
+                            Components
+                          </h4>
+                        </div>
+
+                        <div class="col-auto">
+                          <button type="button" class="btn btn-sm btn-danger m-2" onclick="onDelete()">Delete
+                            Sub-Catagory</button>
+                        </div>
+                      </div>
+                      <div id="sub-sub-catagory-3" class="collapse">
+                        <ul class="list-group list shadow mt-3">
+                          <li class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col ml-2 pt-2 pb-2">
+                                <h4 class="mb-0">
+                                  Laptop & Notebook
+                                </h4>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-info m-2"
+                                  onclick="onSubEditCatagory()">Edit</button>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-danger m-2"
+                                  onclick="onDelete()">Delete</button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col ml-2">
+                                <h4 class="mb-0">
+                                  Desktop PC
+                                </h4>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-info m-2"
+                                  onclick="onSubEditCatagory()">Edit</button>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-danger m-2"
+                                  onclick="onDelete()">Delete</button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col ml-2">
+                                <h4 class="mb-0">
+                                  Components
+                                </h4>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-info m-2"
+                                  onclick="onSubEditCatagory()">Edit</button>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-danger m-2"
+                                  onclick="onDelete()">Delete</button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col ml-2">
+                                <h4 class="mb-0">
+                                  Computer Accessories
+                                </h4>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-info m-2"
+                                  onclick="onSubEditCatagory()">Edit</button>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-danger m-2"
+                                  onclick="onDelete()">Delete</button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col ml-2">
+                                <h4 class="mb-0">
+                                  Monitor
+                                </h4>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-info m-2"
+                                  onclick="onSubEditCatagory()">Edit</button>
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-danger m-2"
+                                  onclick="onDelete()">Delete</button>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </div>
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="row align-items-center justify-content-xl-between">
-                <div class="col-xl-6">
-                    <div class="copyright text-center text-xl-left text-muted">
-                        &copy; 2020 <a href="#" class="font-weight-bold ml-1" target="_blank">Team-Bonikk</a>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="row align-items-center justify-content-xl-between">
+          <div class="col-xl-6">
+            <div class="copyright text-center text-xl-left text-muted">
+              &copy; 2020 <a href="#" class="font-weight-bold ml-1" target="_blank">Team-Bonikk</a>
             </div>
-        </footer>
+          </div>
+        </div>
+      </footer>
     </div>
-    </div>
-    <!-- bonikk Scripts -->
-    <!-- Core -->
+  </div>
+  <!-- bonikk Scripts -->
+  <!-- Core -->
 
 
-    </script>
-    <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
-    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- SweetModel JS  -->
-    <script src="../assets/vendor/sweetalert2/dist/sweetalert2.min.js"></script>
-    <!-- bonikk JS -->
-    <script src="../assets/js/bonikk.js?v=1.0.0"></script>
+  </script>
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- SweetModel JS  -->
+  <script src="../assets/vendor/sweetalert2/dist/sweetalert2.min.js"></script>
+  <!-- bonikk JS -->
+  <script src="../assets/js/bonikk.js?v=1.0.0"></script>
 
 </body>
 

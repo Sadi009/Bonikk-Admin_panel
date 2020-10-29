@@ -1486,6 +1486,28 @@ function onAddSubCatagory(){
 		
 		})()
 }
+// Edit sub sub catagory  
+
+function onSubEditCatagory(){
+	(async () => {
+
+		const { value: formValues } = await Swal.fire({
+		  title: 'Edit',
+		  showCancelButton: true,
+		  html:
+			'<input id="swal-input2" class="swal2-input form-control">',
+		  focusConfirm: false,
+		  preConfirm: () => {
+			return "Edited"
+		  }
+		})
+		
+		if (formValues) {
+		  Swal.fire(JSON.stringify(formValues))
+		}
+		
+		})()
+}
 // Edit Page 
 function onUpdate(){
 	const swalWithBootstrapButtons = Swal.mixin({
