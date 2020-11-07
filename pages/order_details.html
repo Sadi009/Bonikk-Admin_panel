@@ -227,45 +227,218 @@
                                 </div>
                                 <hr>
                                 <!-- Main content  -->
-                                <div class="order_details container pl-6 pb-3">
+                                <div class="order_details container pb-3">
                                     <div class="card-header">
-                                        <h3>Order Id: #01</h3>
-                                        <h3>Product Id: #230</h3>
-                                        <h3>Product Name: Product 1</h3>
-                                        <p><b>Quantity:</b> 25 p</p>
-                                        <p><b>Unit Price:</b> 1000 tk</p>
-                                        <p><b>Total Price:</b> 25000 tk</p>
-                                        <p><b>Status:</b>
-                                            <span class="badge badge-dot">
-                                                <i class="bg-success"></i> Available
-                                            </span>
-                                        </p>
-                                    </div>
-                                    <hr class="m-0">
-                                    <div class="card-header">
-                                        <h3 class="mb-2">User Details</h3>
-                                        <p><b>User ID:</b> #100</p>
-                                        <p><b>User Name:</b> Jone Due</p>
-                                        <p><b>User Address:</b> 16/b, Akhalaiya</p>
-                                    </div>
-                                    <hr class="m-0">
-                                    <div class="card-header">
-                                        <h3 class="mb-2">Shop Details</h3>
-                                        <p><b>Shop ID:</b> #420</p>
-                                        <p><b>Shop Name:</b> xyz</p>
-                                    </div>
-                                    <div class="card-header">
-                                        <h3 class="mb-2">Payment Details</h3>
-                                        <p><b>Shipping ID:</b> #550</p>
-                                        <p><b>Shippp Charge:</b> 50 tk</p>
-                                        <p><b>Payment Id:</b>#cy525</p>
-                                        <p><b>Payment Method:</b> Cash on delivery</p>
-                                    </div>
-                                    <hr class="m-0">
-                                    <div class="card-header">
-                                        <h3>Update Order</h3>
-                                        <a href="#!" class="btn btn-success m-3" onclick="onApprove()">Approve</a>
-                                        <a href="#!" class="btn btn-danger m-3" onclick="onReject()">Reject</a>
+                                      <ul class="list-group list-group-flush list my--3">
+                                        <li class="list-group-item">
+                                          <div class="row align-items-center">
+                                            <div class="col">
+                                              <p class="mb-0 text-lg">
+                                                Order Number: #1000010 <br>
+                                                <span class="text-sm">Placed on 07:30 PM, 08 November 2020</span>
+                                              </p>
+                                            </div>
+                                            <div class="col-auto">
+                                              <!-- Form  -->
+                                              <form class="form-inline">
+                                                <div class="form-group">
+                                                  <label class="form-control-label mr-4" for="payment-method">Status: </label>
+                                                  <select class="form-control pr-4" id="payment-method" style="width: 200px;">
+                                                    <option>Requested</option>
+                                                    <option>Approved</option>
+                                                    <option>Rejected</option>
+                                                    <option>Picked</option>
+                                                    <option>Shipping</option>
+                                                    <option>Delivered</option>
+                                                  </select>
+                                                </div>
+                                              </form>
+                                            </div>
+                                          </div>
+                                        </li>
+                                      </ul>
+                                      <div class="user-desc mt-5 ml-3">
+                                        <h3 class="mb-2">Order By:</h3>
+                                        <ul class="list-group list mt-3" style="width: 320px;">
+                                          <li class="list-group-item" style="border: none; padding: 0;">
+                                            <div class="row align-items-center">
+                                              <div class="col ml-2">
+                                                <h4 class="mb-0">User ID:</h4>
+                                              </div>
+                                              <div class="col-auto mt-3">
+                                                <h4>#1125</h4>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item" style="border: none; padding: 0;">
+                                            <div class="row align-items-center">
+                                              <div class="col ml-2">
+                                                <p class="mb-0">Name:</p>
+                                              </div>
+                                              <div class="col-auto mt-3">
+                                                <p>Iftekhar Mahmoud</p>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item" style="border: none; padding: 0;">
+                                            <div class="row align-items-center">
+                                              <div class="col ml-2">
+                                                <p class="mb-0">Phone:</p>
+                                              </div>
+                                              <div class="col-auto mt-3">
+                                                <p>01686947764</p>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <div class="product-desc mt-5 ml-3 mb-5">
+                                        <h3 class="mb-4">Order Description</h3>
+                                        <table class="table align-items-center table-flush">
+                                          <thead class="thead-light">
+                                            <tr align="center">
+                                              <th scope="col">S.L</th>
+                                              <th scope="col">Product Name</th>
+                                              <th scope="col">Quantity</th>
+                                              <th scope="col">Price</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody align="center">
+                                            <tr>
+                                              <th scope="row">
+                                                01
+                                              </th>
+                                              <td>
+                                                <input type="text" class="form-control" value="A Random Product">
+                                              </td>
+                                              <td>
+                                                <input type="number" class="form-control" value="50" style="width: 100px;">
+                                              </td>
+                                              <td>
+                                                <form class="form-inline">
+                                                  <label class="mr-3">Tk</label>
+                                                  <input type="number" class="form-control" value="500" style="width: 100px;">
+                                                </form>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">
+                                                02
+                                              </th>
+                                              <td>
+                                                <input type="text" class="form-control" value="Another Random Product">
+                                              </td>
+                                              <td>
+                                                <input type="number" class="form-control" value="25" style="width: 100px;">
+                                              </td>
+                                              <td>
+                                                <form class="form-inline">
+                                                  <label class="mr-3">Tk</label>
+                                                  <input type="number" class="form-control" value="1500" style="width: 100px;">
+                                                </form>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">
+                                                03
+                                              </th>
+                                              <td>
+                                                <input type="text" class="form-control" value="Another Very Random Product">
+                                              </td>
+                                              <td>
+                                                <input type="number" class="form-control" value="1" style="width: 100px;">
+                                              </td>
+                                              <td>
+                                                <form class="form-inline">
+                                                  <label class="mr-3">Tk</label>
+                                                  <input type="number" class="form-control" value="70" style="width: 100px;">
+                                                </form>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <div class="payment-shipping">
+                                        <div class="row">
+                                          <div class="col-lg-6 col-md-6" style="border: 1px solid #000; padding: 30px;">
+                                            <h3 class="mb-3">Shipping Address</h3>
+                                            <input type="text" class="form-control mb-2" value="Iftekhar Mahmoud">
+                                            <textarea rows="2" class="form-control mb-2">63 Provati Lechubagan Amerkhana, Sylhet 3100</textarea>
+                                            <input type="number" class="form-control" value="01686947764">
+                                          </div>
+                                          <div class="col-lg-6 col-md-6" style="border: 1px solid #000; padding: 25px;">
+                                            <ul class="list-group list">
+                                              <li class="list-group-item" style="border: none;">
+                                                <div class="row align-items-center">
+                                                  <div class="col ml-2">
+                                                    <p class="mb-0">Subtotal</p>
+                                                  </div>
+                                                  <div class="col-auto">
+                                                    <form class="form-inline">
+                                                  <label class="mr-3">Tk</label>
+                                                  <input type="number" class="form-control" value="70" style="width: 120px;">
+                                                </form>
+                                                  </div>
+                                                </div>
+                                              </li>
+                                              <li class="list-group-item" style="border: none;">
+                                                <div class="row align-items-center">
+                                                  <div class="col ml-2">
+                                                    <p class="mb-0">Shipping Charge</p>
+                                                  </div>
+                                                  <div class="col-auto">
+                                                    <form class="form-inline">
+                                                      <label class="mr-3">Tk</label>
+                                                      <input type="number" class="form-control" value="70" style="width: 120px;">
+                                                    </form>
+                                                  </div>
+                                                </div>
+                                              </li>
+                                              <li class="list-group-item mb-4" style="border: none;">
+                                                <div class="row align-items-center">
+                                                  <div class="col ml-2">
+                                                    <h2 class="mb-0">Total</h2>
+                                                  </div>
+                                                  <div class="col-auto">
+                                                    <form class="form-inline">
+                                                      <label class="mr-3">Tk</label>
+                                                      <input type="number" class="form-control" value="70" style="width: 120px;">
+                                                    </form>
+                                                  </div>
+                                                </div>
+                                              </li>
+                                              <li class="list-group-item" style="border: none; padding: 0;">
+                                                <div class="row align-items-center">
+                                                  <div class="col ml-2">
+                                                    <p class="mb-0">Payment Method:</p>
+                                                  </div>
+                                                  <div class="col-auto">
+                                                    <p>Casho on delivery</p>
+                                                  </div>
+                                                </div>
+                                              </li>
+                                              <li class="list-group-item" style="border: none; padding: 0;">
+                                                <div class="row align-items-center">
+                                                  <div class="col ml-2">
+                                                    <p class="mb-0">Payment Status:</p>
+                                                  </div>
+                                                  <div class="col-auto">
+                                                    <form class="form-inline">
+                                                      <div class="form-group">
+                                                        <label class="form-control-label mr-4" for="payment-method">Status: </label>
+                                                        <select class="form-control pr-4" id="payment-method" style="width: 200px;">
+                                                          <option>Incomplete</option>
+                                                          <option>Complete</option>
+                                                        </select>
+                                                      </div>
+                                                    </form>
+                                                  </div>
+                                                </div>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                 </div>
                             </div>
