@@ -6719,7 +6719,7 @@ input[type='button'].btn-block
 .list-group-item:hover,
 .list-group-item:focus
 {
-    z-index: 1;
+    
 
     text-decoration: none;
 }
@@ -22471,3 +22471,4 @@ ul {
 .toggle-switchArea {
     margin: 10px 0 10px 0;
 }
+list-group-item:hover, .list-group-item:focus
