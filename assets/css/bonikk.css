@@ -2225,7 +2225,7 @@ pre code
 
 @media (max-width: 575.98px)
 {
-    .table-responsive-sm
+    .table-flush upper-sm
     {
         display: block;
         overflow-x: auto;
@@ -20839,7 +20839,6 @@ textarea[resize='horizontal']
     padding-bottom: .75rem;
 
     letter-spacing: 1px;
-    text-transform: uppercase;
 
     border-bottom: 1px solid #e9ecef;
 }
@@ -20957,7 +20956,7 @@ p
     font-weight: 600; 
 
     letter-spacing: .025em;
-    text-transform: uppercase;
+    text-transform: lo;
 }
 
 .heading-small
@@ -22471,4 +22470,4 @@ ul {
 .toggle-switchArea {
     margin: 10px 0 10px 0;
 }
-list-group-item:hover, .list-group-item:focus
+/* table-responsive table-flush upper */
